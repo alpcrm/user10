@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Revenue Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <img src="img/Daion.png" width="100px;">
+    <h1>Product Revenue Calculator</h1>
+    <div class="input-section">
+      <label for="monthlyViewers">Monthly Viewers:</label>
+      <input type="number" id="monthlyViewers" min="0">
+      <label for="totalAdImpressions">Total Ad Impressions (in thousands):</label>
+      <input type="number" id="totalAdImpressions" min="0">
+      <button onclick="calculateRevenue()">Calculate</button>
+    </div>
+    <div class="result">
+      <h2>Estimated Revenue:</h2>
+      <p id="monthlyRevenue">-</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
